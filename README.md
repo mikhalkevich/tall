@@ -5,6 +5,7 @@
 * [✨ Visit Website TailwindCSS](https://tailwindcss.com)
 * [✨ Visit Website AlpineJS](https://alpinejs.dev/)
 * [✨ Visit Website Laravel](https://laravel.com/) 
+* [✨ Visit Website Livewire](https://laravel-livewire.com/) 
 
  
 ## ✨ Основные понятия

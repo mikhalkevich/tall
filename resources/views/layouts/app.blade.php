@@ -10,7 +10,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @livewireStyles
     <!-- Alpine.js -->
     {{-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> --}}
 
@@ -114,7 +114,6 @@
     <div class="min-h-screen xl:flex">
         @include('layouts.backdrop')
         @include('layouts.sidebar')
-
         <div class="flex-1 transition-all duration-300 ease-in-out"
             :class="{
                 'xl:ml-[290px]': $store.sidebar.isExpanded || $store.sidebar.isHovered,
@@ -128,11 +127,10 @@
                 @yield('content')
             </div>
         </div>
-
     </div>
-
+    @stack('scripts')
+    @livewireScripts
 </body>
 
-@stack('scripts')
 
 </html>

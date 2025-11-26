@@ -2,6 +2,7 @@
 
 @section('content')
     <x-common.page-breadcrumb pageTitle="Blank Page" />
+
     <hr />
-    <livewire:counter />
+   <livewire:contact-form />
 @endsection

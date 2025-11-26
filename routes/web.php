@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 // dashboard pages
 Route::get('/', function () {
@@ -81,6 +82,8 @@ Route::get('/image', function () {
 Route::get('/videos', function () {
     return view('pages.ui-elements.videos', ['title' => 'Videos']);
 })->name('videos');
+
+Route::get('contact',[Controllers\ContactController::class,'getIndex'])->name('contact');
 
 
 
