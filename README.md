@@ -33,4 +33,16 @@ composer -V
 node -v
 npm -v
 ```
- 
+
+### Установка проекта
+- git clone https://github.com/mikhalkevich/tall.git
+- cd tall
+- composer install
+- npm i
+- Создать файл .env (по примеру .env.example)
+- Создать базу tall и подключиться к созданной базе tall в файле .env
+- php artisan migrate
+
+### Запуск
+- php artisan serve
+- npm run dev (в режиме разработчика)
